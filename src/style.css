@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: auto;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    
+}
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.buttonNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.button{
+    width: 120px;
+    height: 70px;
+}
+
+#content{
+    align-self:center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    min-width: 70vw;
+    text-align: center;
+    border-color: gold;
+    padding: 30px;
+    border-radius: 15%;
+    border: double 10px;
+    border-color: antiquewhite;
+    background-image: url("./images/O614DU0.jpg");
+    background-size: cover;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    align-content: center;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    text-align: center;
+    white-space-collapse:collapse;
+    align-items: center;
+   
+    
+}
+
+
+.logo{
+    justify-self: center;
+    width: 80px;
+    height: 80px;
+}
+
+.absoluteIcon{
+    position: absolute;
+    bottom: 200px;
+    left: 177px;
+    
+}
+
+.signature, .normalText{
+    color: antiquewhite;
+}
+
+.description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 450px;    
+    border-radius: 15%;
+    border: double 10px;
+    border-color: antiquewhite;
+    padding:30px; 
+    background-color: rgb(17, 17, 17);   
+
+}
+
+
+
+
