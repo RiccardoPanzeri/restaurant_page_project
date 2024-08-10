@@ -1,5 +1,5 @@
 import italianPennant from"./images/italy_pennant.png";
-import italianRoundGold from "./images/italy_gold_border.png";
+import clockIcon from "./images/chef-hat.png";
 import italianEsaGold from "./images/italy_esa_gold.png";
 
 
@@ -22,24 +22,36 @@ const description = document.createElement("div");
 const pennant = document.createElement("img");
 const descriptionText = document.createElement("p");
 const staffSignature = document.createElement("p");
+//orari
+const hours = document.createElement("div");
+const clock = document.createElement("img");
+const hourTitle = document.createElement("h3");
+
+
 //modifica classi
 title.classList.add("title");
 logo.classList.add("logo");
 TitleHeader.classList.add("titleHeader");
 description.classList.add("homepageDiv", "description");
-pennant.classList.add("absoluteIcon", "logo");
+pennant.classList.add("absoluteIcon");
 descriptionText.classList.add("normalText");
 staffSignature.classList.add("signature");
+hours.classList.add("homepageDiv", "hours");
+clock.classList.add("absoluteIcon");
+hourTitle.classList.add("subHeader");
 //modifica attributi
 logo.setAttribute("src", italianEsaGold);
 pennant.setAttribute("src", italianPennant);
+clock.setAttribute("src", clockIcon);
 //modifica testo
-TitleHeader.textContent = "Nome del ristorante template";
+TitleHeader.textContent = 'Ristorante Pizzeria "La Vera Italia"';
 descriptionText.textContent = "Template della descrizione, testo casuale, blah blah blah blah e ancora blah e poi blah, ciao mondo";
-staffSignature.textContent = "Lo Staff de 'La Vera Italia'";
+staffSignature.textContent = "-Lo Staff de 'La Vera Italia'";
+hourTitle.textContent = "Hours";
 //aggiunta elementi
 contentDiv.appendChild(title);
 contentDiv.appendChild(description);
+contentDiv.appendChild(hours);
 //aggiunta header
 title.appendChild(logo);
 title.appendChild(TitleHeader);
@@ -48,7 +60,16 @@ title.appendChild(logo.cloneNode(true));
 description.appendChild(pennant);
 description.appendChild(descriptionText);
 description.appendChild(staffSignature);
-
+//aggiunta orari:
+hours.appendChild(clock);
+hours.appendChild(hourTitle);
+for(let i = 0; i < 7; i++){
+    const daysOfWeek = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    let hourP = document.createElement("p");
+    hourP.classList.add("normalText", "hoursP");
+    hourP.textContent = daysOfWeek[i];
+    hours.appendChild(hourP);
+}
 }
 
 export default loadHomePage;

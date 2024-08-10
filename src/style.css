@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'cursive_serifbook';
+    src: url('./fonts/cursiveserif-book-webfont.woff2') format('woff2'),
+         url('./fonts/cursiveserif-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'modern_prestige_demoregular';
+    src: url('./fonts/modern_prestige_demo-webfont.woff2') format('woff2'),
+         url('./fonts/modern_prestige_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    font-size: 16px;
+    --gold: rgb(155, 132, 3);
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -23,6 +49,11 @@ html,body {
     justify-content: center;
     align-items: center;
     height: 100px;
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    border-bottom: var(--gold) solid 5px;
+   
+    
 }
 
 .buttonNav{
@@ -30,11 +61,31 @@ html,body {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding-top: 30px;
+    overflow: hidden;
+    
 }
 
 .button{
     width: 120px;
     height: 70px;
+    border-top: solid 4px var(--gold);
+    border-left: solid 4px var(--gold);
+    border-right: solid 4px var(--gold);
+    border-bottom: var(--gold) solid 4px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(20, 20, 20);
+    color: antiquewhite;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #474747;
+   border-radius: 20px 20px 5px 5px;
+   
+    height: 75px;
+    
 }
 
 #content{
@@ -44,11 +95,13 @@ html,body {
     gap: 100px;
     justify-content: flex-start;
     align-items: center;
-    flex: 1;
+    
     min-width: 70vw;
+    width: fit-content;
     text-align: center;
     border-color: gold;
-    padding: 30px;
+    padding: 50px;
+    margin:40px;
     border-radius: 15%;
     border: double 10px;
     border-color: antiquewhite;
@@ -70,40 +123,93 @@ html,body {
     text-align: center;
     white-space-collapse:collapse;
     align-items: center;
-   
+    background-color: black;
+    width: 90%;
+    min-width: fit-content;
+    border-radius: 25%;
+  
+   border: antiquewhite ridge 5px;
     
 }
+
+.titleHeader{
+    font-family: "modern_prestige_demoregular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4.4rem;
+    letter-spacing: 2px;
+    color: antiquewhite;
+    text-shadow: 
+    -2px -2px 0 #000000,  
+    2px -2px 0 #000000,
+    -2px 2px 0 #000000,
+    2px 2px 0 #000000; 
+}
+
 
 
 .logo{
     justify-self: center;
     width: 80px;
     height: 80px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 45%;
+    border-color: var(--gold) !important;
+    border: 2px ridge;
 }
 
 .absoluteIcon{
+    width: 80px;
+    height: 80px;
     position: absolute;
     bottom: 200px;
     left: 177px;
+  ;
+}
+
+.normalText, .signature{
+    color: antiquewhite;
+    font-family: "cursive_serifbook", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 
-.signature, .normalText{
-    color: antiquewhite;
+
+.signature{
+    color: var(--gold);
+    text-align: left;
+    
 }
 
-.description{
+
+.homepageDiv{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     width: 450px;    
     border-radius: 15%;
     border: double 10px;
     border-color: antiquewhite;
     padding:30px; 
     background-color: rgb(17, 17, 17);   
+    margin-top: 80px;
 
+}
+
+.subHeader{
+    text-align: left;
+    font-family: "modern_prestige_demoregular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(121, 103, 1);
+    font-size: 2.8rem;
+    letter-spacing: 8px;
+
+
+}
+
+.description{
+    gap: 20px;
+}
+
+
+.hours > .absoluteIcon{
+     bottom:510px;
 }
 
 

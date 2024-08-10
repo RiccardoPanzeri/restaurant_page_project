@@ -23,7 +23,7 @@ module.exports = {
             type: "asset/resource",
         },
         {
-            test: /\.(otf|wof|wof2|ttf|eot)$/i,
+            test: /\.(otf|woff|woff2|ttf|eot)$/i,
             type:"asset/resource",
         },
     ]},
