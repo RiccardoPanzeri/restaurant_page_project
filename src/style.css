@@ -30,7 +30,7 @@ body{
     gap:30px;
     justify-content: auto;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(10, 10, 10);
     
 }
@@ -50,7 +50,7 @@ html,body {
     align-items: center;
     height: 100px;
     background-color: rgb(17, 17, 17);
-    width: 100%;
+    width:100%;
     border-bottom: var(--gold) solid 5px;
    
     
@@ -62,7 +62,7 @@ html,body {
     align-items: center;
     gap: 50px;
     padding-top: 30px;
-    
+    width: max-content;
     
 }
 
@@ -180,7 +180,7 @@ button:hover{
     width: 80px;
     height: 80px;
     position: absolute;
-    bottom: 230px;
+    bottom: 280px;
     left: 230px;
   
 }
@@ -195,7 +195,8 @@ button:hover{
 .signature{
     color: var(--gold);
     text-align: left;
-    
+    font-family: "modern_prestige_demoregular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.3rem;
 }
 
 
@@ -228,6 +229,13 @@ button:hover{
     position: relative !important;
     gap: 20px;
 }
+
+.location{
+    position: relative !important;
+   
+    
+}
+
 
 .locationTextContent{
 

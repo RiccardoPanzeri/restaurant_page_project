@@ -57,7 +57,7 @@ gpsIcon.setAttribute("src", italianGpsIcon);
 //modifica testo
 TitleHeader.textContent = 'Ristorante Pizzeria "La Vera Italia"';
 descriptionText.textContent = "Template della descrizione, testo casuale, blah blah blah blah e ancora blah e poi blah, ciao mondo";
-staffSignature.textContent = "-Lo Staff de 'La Vera Italia'";
+staffSignature.textContent = '-Lo Staff de "La Vera Italia"';
 hourTitle.textContent = "Hours";
 locationTitle.textContent= "Location";
 locationText.textContent = "789 Colosseum Avenue, Augustus City, Your State";
