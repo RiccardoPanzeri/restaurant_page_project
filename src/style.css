@@ -19,6 +19,7 @@
 
 }
 
+
 :root{
     font-size: 16px;
     --gold: rgb(155, 132, 3);
@@ -41,7 +42,7 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: auto;
+    overflow-x:auto;
 }
 
 .header{
@@ -50,8 +51,8 @@ html,body {
     align-items: center;
     height: 100px;
     background-color: rgb(17, 17, 17);
-    width:100%;
     border-bottom: var(--gold) solid 5px;
+    width:100%;
    
     
 }
@@ -98,6 +99,7 @@ button:hover{
     
 }
 
+
 #content{
     align-self:center;
     display: flex;
@@ -106,10 +108,10 @@ button:hover{
     justify-content: flex-start;
     align-items: center;
     
-    min-width: 70vw;
+    min-width: 95%;
     width: fit-content;
     text-align: center;
-    
+    flex: 1;
     padding: 50px;
     margin:40px;
     border-radius: 15%;
@@ -144,16 +146,16 @@ button:hover{
 
 .title{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 2fr 1.1fr;
+    gap: 50px;
     text-align: center;
     white-space-collapse:collapse;
     align-items: center;
     background-color: black;
-    width: 90%;
+    width: 70%;
     min-width: fit-content;
-    border-radius: 25%;
-  
+    border-radius: 40%;
+    padding: 10px;
    border: antiquewhite ridge 5px;
     
 }
@@ -168,6 +170,7 @@ button:hover{
     2px -2px 0 #000000,
     -2px 2px 0 #000000,
     2px 2px 0 #000000; 
+    margin-right: 5px;
 }
 
 
@@ -206,7 +209,7 @@ button:hover{
 }
 
 
-.homepageDiv{
+.homepageDiv, .menuDiv{
     position: relative !important;
     display: flex;
     flex-direction: column;
@@ -244,10 +247,14 @@ button:hover{
 
 
 .locationTextContent{
-
+    
     white-space: nowrap;
     word-break:keep-all;
 
+}
+
+.location > .subHeader{
+    margin: 10px;
 }
 
 .hours{
@@ -260,9 +267,39 @@ button:hover{
 }
 
 .location >.absoluteIcon{
-    bottom: 265px;
+    bottom: 200px;
 }
 
 
+.menuDiv{
+    display: grid;
+    grid-template-columns: 1f 3f !important;
+    grid-template-rows: 1f 3f;
+    gap: 10px;
+    width: fit-content;
+}
+
+.menuDiv > img{
+    width: auto;
+    height:400px;
+}
+
+.menuEntryTitle{
+    grid-column: 1/2;
+    grid-row: 1;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.menuEntryImage{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.menuEntryText{
+    grid-column: 2;
+    grid-row: 2;
+    
+}
 
 

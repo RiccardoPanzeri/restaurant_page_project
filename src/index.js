@@ -3,12 +3,13 @@ import "./style.css";
 import loadHomepage from "./homepage.js";
 import italianEsaGold from "./images/italy_esa_gold.png";
 
+import loadMenu from "./menu.js";
 //carica homepage all'apertura del sito
 createTitle();
 loadHomepage();
+loadMenu();
 
-
-
+let ciao = "ciao";
 
 
 
@@ -28,10 +29,15 @@ buttonNav.addEventListener("click", (e)=>{
     switch(element.id){
         case "homeButton":
             loadHomepage();
-            console.log("hmepage loaded");
+            console.log("homepage loaded");
+            break;
+        case "menuButton":
+            loadMenu();
+            console.log("homepage loaded");
             break;
     }
 });
+
 
 //funzioni:
 function createTitle(){
@@ -59,7 +65,22 @@ function setTitle(newTitle){
     console.log("Titolo cambiato");
 }
 
+function setTitleLogo(newLogo){
+    const titleLogo = document.querySelectorAll(".logo");
+    for(let logo of titleLogo){
+        logo.setAttribute("src", newLogo);
+
+    }
+}
+
+function emptyContent(){
+    const contentDiv = document.querySelector("#content");
+    const divChildren= document.querySelectorAll(".divChildDynamic");
+for(let child of divChildren){
+    contentDiv.removeChild(child);
+}
+}
 
 
 
-export {setTitle};
+export {setTitle, emptyContent, setTitleLogo, italianEsaGold};

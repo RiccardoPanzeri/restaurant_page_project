@@ -1,19 +1,15 @@
 import italianPennant from"./images/italy_pennant.png";
 import clockIcon from "./images/chef-hat.png";
 import italianGpsIcon from "./images/italy_gps.png";
-import { setTitle } from "./index.js";
+import { setTitle, emptyContent, setTitleLogo, italianEsaGold } from "./index.js";
 
 function loadHomePage(){
 
-const contentDiv = document.querySelector("#content");
-
+    const contentDiv = document.querySelector("#content");
 //svuota finestra content
-const divChildren= document.querySelectorAll(".divChildDynamic");
-for(let child of divChildren){
-    contentDiv.removeChild(child);
-}
+emptyContent();
+
 //crea elementi della Homepage:
-//header
 
 //descrizione
 const description = document.createElement("div");
@@ -30,9 +26,7 @@ const gpsIcon = document.createElement("img");
 const locationTitle = document.createElement("h3");
 const locationText = document.createElement("p");
 
-
 //modifica classi
-
 description.classList.add("homepageDiv", "description", "divChildDynamic");
 pennant.classList.add("absoluteIcon");
 descriptionText.classList.add("normalText");
@@ -44,11 +38,13 @@ location.classList.add("homepageDiv", "location", "divChildDynamic");
 gpsIcon.classList.add("absoluteIcon");
 locationTitle.classList.add("subHeader");
 locationText.classList.add("normalText");
-//modifica attributi
 
+//modifica attributi
 pennant.setAttribute("src", italianPennant);
 clock.setAttribute("src", clockIcon);
 gpsIcon.setAttribute("src", italianGpsIcon);
+setTitleLogo(italianEsaGold);
+
 //modifica testo
 setTitle('Ristorante Pizzeria "La Vera Italia"');
 descriptionText.textContent = "Template della descrizione, testo casuale, blah blah blah blah e ancora blah e poi blah, ciao mondo";
@@ -56,12 +52,11 @@ staffSignature.textContent = '-Lo Staff de "La Vera Italia"';
 hourTitle.textContent = "Hours";
 locationTitle.textContent= "Location";
 locationText.textContent = "789 Colosseum Avenue, Augustus City, Your State";
-//aggiunta elementi
 
+//aggiunta elementi
 contentDiv.appendChild(description);
 contentDiv.appendChild(hours);
 contentDiv.appendChild(location);
-//aggiunta header
 
 //aggiunta descrizione
 description.appendChild(pennant);
