@@ -67,7 +67,13 @@ for(let i = 0; i < 7; i++){
     const daysOfWeek = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     let hourP = document.createElement("p");
     hourP.classList.add("normalText", "hoursP");
-    hourP.textContent = daysOfWeek[i];
+    if(i === 6 || i === 5){
+    hourP.textContent = `${daysOfWeek[i]}: 8:00 - 1:00 `;
+    }else if(i === 1 ){
+        hourP.textContent = `${daysOfWeek[i]}: closed`;
+    }else{
+        hourP.textContent = `${daysOfWeek[i]}: 8:00 - 23:00 `;
+    }
     hours.appendChild(hourP);
 }
 }
