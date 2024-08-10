@@ -1,6 +1,6 @@
 import { emptyContent, setTitle, setTitleLogo } from "./index.js";
 import menuLogo from "./images/menu.png";
-
+import coffeeLogo from "./images/cappuccino.png";
 
 
 
@@ -11,12 +11,11 @@ setTitleLogo(menuLogo);
 //svuota finestra content
 emptyContent();
 //inserimento entry
+createMenuSection("caffetteriaSection", "Caffetteria", coffeeLogo);
 createMenuEntry(caffe);
 createMenuEntry(caffeDoppio);
 
-function createMenuSection(id, title, icon){
 
-}
 
 
 
@@ -49,8 +48,32 @@ const caffe = MenuEntry("caffe", menuLogo, "Caffe'", "Un caffè buonissimo blah 
 
 const caffeDoppio = MenuEntry("caffeDoppio", menuLogo, "Caffe Doppio", "Un caffè buonissimo, ma doppio blah blah blah");
 
-//funzioni per la creazione di elementi del menu
+//funzioni per la creazione di elementi del menu:
 
+//crea titoli sezioni menu
+function createMenuSection(id, title, icon){
+    //creazione elementi
+    const sectionDiv = document.createElement("div");
+    const sectionTitle = document.createElement("h3");
+    const sectionIcon = document.createElement("img");
+    //assegnazione classi
+    sectionDiv.classList.add("menuSectionDiv");
+    sectionTitle.classList.add("menuSectionTitle");
+    sectionIcon.classList.add("menuSectionIcon");
+    //assegnazione attributi
+    sectionDiv.setAttribute("id", id);
+    sectionTitle.textContent = title;
+    sectionIcon.setAttribute("src", icon);
+    //inserimento sectionDiv
+    const contentDiv = document.querySelector("#content");
+    contentDiv.appendChild(sectionDiv);
+    //inserimento elementi
+    sectionDiv.appendChild(sectionIcon);
+    sectionDiv.appendChild(sectionTitle);
+    sectionDiv.appendChild(sectionIcon.cloneNode(true));
+}
+
+//crea entry menu
 function createMenuEntry(entryObject){
     //creazione elementi    
     const menuDiv = document.createElement("div");
