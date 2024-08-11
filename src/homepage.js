@@ -1,14 +1,17 @@
 import italianPennant from"./images/italy_pennant.png";
 import clockIcon from "./images/chef-hat.png";
 import italianGpsIcon from "./images/italy_gps.png";
-import { setTitle, emptyContent, setTitleLogo, italianEsaGold } from "./index.js";
+import { setTitle, emptyContent, setTitleLogo, italianEsaGold, setBG} from "./index.js";
+import italianBg from "./images/itaFlagLowPoly.jpg";
+
 
 function loadHomePage(){
 
-    const contentDiv = document.querySelector("#content");
+const contentDiv = document.querySelector("#content");
 //svuota finestra content
 emptyContent();
-
+//sistema sfondo
+setBG(italianBg, "auto");
 //crea elementi della Homepage:
 
 //descrizione

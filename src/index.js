@@ -2,21 +2,13 @@ import "./modern-normalize.css";
 import "./style.css";
 import loadHomepage from "./homepage.js";
 import italianEsaGold from "./images/italy_esa_gold.png";
-
 import loadMenu from "./menu.js";
+import loadContactPage from "./contact.js";
+
+
 //carica homepage all'apertura del sito
 createTitle();
 loadHomepage();
-loadMenu();
-
-let ciao = "ciao";
-
-
-
-
-
-
-
 
 
 //ricerca elementi DOM
@@ -29,17 +21,21 @@ buttonNav.addEventListener("click", (e)=>{
     switch(element.id){
         case "homeButton":
             loadHomepage();
-            console.log("homepage loaded");
+            
             break;
         case "menuButton":
             loadMenu();
-            console.log("homepage loaded");
+            
+            break;
+        case "contactButton":
+            loadContactPage();
             break;
     }
 });
 
 
 //funzioni:
+
 function createTitle(){
     //creazione elementi
     const contentDiv = document.querySelector("#content");
@@ -82,5 +78,11 @@ for(let child of divChildren){
 }
 
 
+function setBG(image, sizeStyle){
+    const contentDiv = document.querySelector("#content");
+contentDiv.style.backgroundImage = `url(${image})`;
+contentDiv.style.backgroundSize = sizeStyle;
+}
 
-export {setTitle, emptyContent, setTitleLogo, italianEsaGold};
+
+export {setTitle, emptyContent, setTitleLogo, italianEsaGold, setBG};

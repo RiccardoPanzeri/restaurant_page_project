@@ -21,7 +21,7 @@
 
 
 :root{
-    font-size: 16px;
+    font-size: 12px;
     --gold: rgb(155, 132, 3);
 }
 
@@ -105,11 +105,11 @@ button:hover{
     align-self:center;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     justify-content: flex-start;
     align-items: center;
     
-    min-width: 95%;
+    min-width: 85%;
     width: fit-content;
     text-align: center;
     flex: 1;
@@ -118,8 +118,9 @@ button:hover{
     border-radius: 15%;
     border: double 10px;
     border-color: antiquewhite;
-    background-image: url("./images/O614DU0.jpg");
-    background-size: cover;
+    background-image: url("./images/itaFlagLowPoly.jpg");
+    background-size:auto;
+    padding-bottom: 100px;
 }
 
 .footer{
@@ -153,7 +154,7 @@ button:hover{
     white-space-collapse:collapse;
     align-items: center;
     background-color: black;
-    width: 70%;
+    width: 50%;
     min-width: fit-content;
     border-radius: 40%;
     padding: 10px;
@@ -184,13 +185,14 @@ button:hover{
     border-radius: 45%;
     border-color: var(--gold) !important;
     border: 3px ridge;
+    padding: 10px;
 }
 
 .absoluteIcon{
     width: 80px;
     height: 80px;
     position: absolute;
-    bottom: 280px;
+    bottom: 210px;
     left: 230px;
   
 }
@@ -264,17 +266,17 @@ button:hover{
 
 }
 .hours > .absoluteIcon{
-     bottom:655px;
+     bottom:500px;
 }
 
 .location >.absoluteIcon{
-    bottom: 200px;
+    bottom: 145px;
 }
 
 
 .menuDiv{
     display: grid;
-    grid-template-columns: 1f 3f !important;
+    grid-template-columns: 300px 300px !important;
     grid-template-rows: 1f 3f;
     gap: 10px;
     width: fit-content;
@@ -283,7 +285,7 @@ button:hover{
 
 
 .menuEntryTitle{
-    grid-column: 1/2;
+    grid-column: 1/-1;
     grid-row: 1;
     margin: 0;
     margin-bottom: 20px;
@@ -292,16 +294,20 @@ button:hover{
 .menuEntryImage{
     grid-column: 1;
     grid-row: 2;
-    height: 250px;
-    width: auto;
-
-    
+    height: auto;
+    width: 250px;
+    justify-self: center;
+    border-radius: 20px;
 
 }
 
 .menuEntryText{
     grid-column: 2;
     grid-row: 2;
+    max-width: 400px;
+    font-size: 1.4rem;
+    align-self: center;
+    
     
 }
 
@@ -309,8 +315,9 @@ button:hover{
     display: grid;
     grid-template-columns: 1fr 310px 1.1fr;
     width: fit-content;
-    position: sticky;
-    margin-top: 20px;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    align-items: center;
 
 }
 
@@ -323,8 +330,21 @@ button:hover{
     color: var(--gold);
     text-align: center;
     font-family: "modern_prestige_demoregular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.9rem;
+    font-size: 4.8rem;
     
 }
 
+#caffeDoppio>img{
+    width: 180px;
+    height: auto;
+}
 
+#gelato>img{
+    height: 250px;
+    width: 210px;
+}
+
+img{
+    padding: 0;
+    margin: 0;
+}
