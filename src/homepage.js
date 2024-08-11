@@ -50,7 +50,7 @@ setTitleLogo(italianEsaGold);
 
 //modifica testo
 setTitle('Ristorante Pizzeria "La Vera Italia"');
-descriptionText.textContent = "Here at La Vera Italia, you will only find authentic Italian dishes from the real Cucina Italiana. Our spaghetti are all meatball free, and you definitely won't find ananas or ketchup on top of our pizza (we promise).";
+descriptionText.textContent = "Here at La Vera Italia, you will only find authentic Italian dishes from the real Cucina Italiana. Our spaghetti are all meatball free, and you definitely won't find any pineapple or ketchup on top of our pizza (we promise).";
 staffSignature.textContent = '- "La Vera Italia\'s staff "';
 hourTitle.textContent = "Hours";
 locationTitle.textContent= "Location";
