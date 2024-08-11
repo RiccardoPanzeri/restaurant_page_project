@@ -19,26 +19,26 @@ import cannoli from "./images/cannoli.jpg";
 import mascarpone from "./images/coffeeMascarpone.jpg";
 
 const caffetteriaList = [
-    MenuEntry("caffe", espresso, "Caffe'", "Un caffè buonissimo blah blah blah"),
-    MenuEntry("caffeDoppio", doppio, "Caffe' Doppio", "Un caffè buonissimo, ma doppio blah blah blah"),
-    MenuEntry("caffeMacchiato", macchiato," Caffe'Macchiato", "Un caffè buonissimo, ma macchiato blah blah blah")
+    MenuEntry("caffe", espresso, "Caffe'", "When we say \"caffe'\", we really mean short, strong espresso. We're not playing around here."),
+    MenuEntry("caffeDoppio", doppio, "Caffe' Doppio", "What's better than a regular cup of espresso? A double espresso, extra strong, in a cup twice as big!"),
+    MenuEntry("caffeMacchiato", macchiato," Caffe'Macchiato", "A regular espresso (did we say that we love espresso?), but with a small amount of foamed milk.")
 ];
 
-const pizzaList = [ MenuEntry("margherita", margherita, "Margherita", "la classica pizza blah blah blah"),
-    MenuEntry("marinara", marinara, "Marinara", "tipica pizza napoletana condita con pomodoro, aglio, origano e olio blah blah blah"),
-    MenuEntry("calzone", calzone,"Calzone", "Un specialità gastronomica italiana nella quale una farcitura o ripieno di vario genere viene racchiusa in un involucro di pasta lievitata, e successivamente cotta nel forno")
+const pizzaList = [ MenuEntry("margherita", margherita, "Margherita", "'L'unica e inimitabile'. The original Neapolitan pizza, with a raised edge (cornicione) and garnished with hand-crushed peeled tomatoes, mozzarella (buffalo mozzarella or fior di latte), fresh basil leaves, and extra virgin olive oil"),
+    MenuEntry("marinara", marinara, "Marinara", "Another Neapolitan classic, Pizza alla Marinara is a style of pizza seasoned with only tomato sauce, extra virgin olive oil, origano and garlic."),
+    MenuEntry("calzone", calzone,"Calzone", "Oven-baked turnover, made with leavened dough and stuffed with mozzarella and either prosciutto or salame.")
 ]
 
-const primiList = [ MenuEntry("spaghetti", spaghetti, "Spaghetti Aglio e Olio", "I classici spaghetti blah blah blah"),
-    MenuEntry("gnocchi", gnocchi, "Gnocchi della Mamma", "Niente batte gli gnocchi della mamma blah blah blah"),
-    MenuEntry("lasagne", lasagne,"Lasagne della Nonna", "Le mitiche lasagne dell nonna blah blah blah")
+const primiList = [ MenuEntry("spaghetti", spaghetti, "Spaghetti Aglio e Olio", "Less is more. A traditional pasta dish made with a 'soffritto' of thinly sliced garlic in extra virgin olive oil. And, in case you like spicy flavour, we can add dried chili to the mix (spaghetti aglio, olio e peperoncino)."),
+    MenuEntry("gnocchi", gnocchi, "Gnocchi della Mamma", "Nothing can top mamma's gnocchi! made with ragu' and fresh basil leaves"),
+    MenuEntry("lasagne", lasagne,"Lasagne della Nonna", "Grandma's legendary Lasagne, made by following the original recipe from Emilia-Romagna")
 
 ]
 
 
-const dessertList = [MenuEntry("gelato", gelato, "Fluffy Chocolate Gelato", "Se non è al cioccolato non va bene blahblhablha"),
-    MenuEntry("Cannolo", cannoli, "Cannolo Siciliano", "Mamma mia che buono blah blah blah"),
-    MenuEntry("mascarpone", mascarpone,"Crema di Mascarpone al Caffe'", " crema di mascarpone al gusto di caffè che blah blah blah")
+const dessertList = [MenuEntry("gelato", gelato, "Fluffy Chocolate Gelato", "The Original Italian Style gelato, with extra Chocolate and Nutella sauce on top."),
+    MenuEntry("Cannolo", cannoli, "Cannolo Siciliano", " The well known tube-shaped Sicilian sweet, consisting of a shell of fried pastry dough, filled with a creamy filling containing ricotta cheese."),
+    MenuEntry("mascarpone", mascarpone,"Crema di Mascarpone al Caffe'", "Traditional North Italian Sweet from Lombardy, consisting in sweet, coffee flavored mascarpone cream.")
 ]
 
 function loadMenu(){

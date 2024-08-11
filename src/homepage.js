@@ -50,8 +50,8 @@ setTitleLogo(italianEsaGold);
 
 //modifica testo
 setTitle('Ristorante Pizzeria "La Vera Italia"');
-descriptionText.textContent = "Template della descrizione, testo casuale, blah blah blah blah e ancora blah e poi blah, ciao mondo";
-staffSignature.textContent = '-Lo Staff de "La Vera Italia"';
+descriptionText.textContent = "Here at La Vera Italia, you will only find authentic Italian dishes from the real Cucina Italiana. Our spaghetti are all meatball free, and you definitely won't find ananas or ketchup on top of our pizza (we promise).";
+staffSignature.textContent = '- "La Vera Italia\'s staff "';
 hourTitle.textContent = "Hours";
 locationTitle.textContent= "Location";
 locationText.textContent = "789 Colosseum Avenue, Augustus City, Your State";
