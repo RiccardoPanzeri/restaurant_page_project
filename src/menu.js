@@ -24,14 +24,14 @@ const caffetteriaList = [
     MenuEntry("caffeMacchiato", macchiato," Caffe'Macchiato", "A regular espresso (did we say that we love espresso?), but with a small amount of foamed milk.")
 ];
 
-const pizzaList = [ MenuEntry("margherita", margherita, "Margherita", "'L'unica e inimitabile'. The original Neapolitan pizza, with a raised edge (cornicione) and garnished with hand-crushed peeled tomatoes, mozzarella (buffalo mozzarella or fior di latte), fresh basil leaves, and extra virgin olive oil"),
+const pizzaList = [ MenuEntry("margherita", margherita, "Margherita", "'L'unica e inimitabile'. The original Neapolitan pizza, with a raised edge (cornicione) and garnished with hand-crushed peeled tomatoes, mozzarella (buffalo mozzarella or fior di latte), fresh basil leaves, and extra virgin olive oil."),
     MenuEntry("marinara", marinara, "Marinara", "Another Neapolitan classic, Pizza alla Marinara is a style of pizza seasoned with only tomato sauce, extra virgin olive oil, origano and garlic."),
     MenuEntry("calzone", calzone,"Calzone", "Oven-baked turnover, made with leavened dough and stuffed with mozzarella and either prosciutto or salame.")
 ]
 
 const primiList = [ MenuEntry("spaghetti", spaghetti, "Spaghetti Aglio e Olio", "Less is more. A traditional pasta dish made with a 'soffritto' of thinly sliced garlic in extra virgin olive oil. And, in case you like spicy flavour, we can add dried chili to the mix (spaghetti aglio, olio e peperoncino)."),
-    MenuEntry("gnocchi", gnocchi, "Gnocchi della Mamma", "Nothing can top mamma's gnocchi! made with ragu' and fresh basil leaves"),
-    MenuEntry("lasagne", lasagne,"Lasagne della Nonna", "Grandma's legendary Lasagne, made by following the original recipe from Emilia-Romagna")
+    MenuEntry("gnocchi", gnocchi, "Gnocchi della Mamma", "Nothing can top mamma's gnocchi! made with ragu' and fresh basil leaves."),
+    MenuEntry("lasagne", lasagne,"Lasagne della Nonna", "Grandma's legendary Lasagne, made by following the original recipe from Emilia-Romagna.")
 
 ]
 
